@@ -5,13 +5,18 @@ __pycache__/
 .Python
 env/
 venv/
-outputs/
 !.gitignore
-!outputs/best_models/
-!outputs/best_models/best_model.zip  # Explicitly include best_model.zip
 
-# Keep other .zip files ignored except best_model.zip
+# Ignore all outputs/ contents except best_model.zip
+outputs/
+!outputs/best_models/best_model.zip
+
+# Ignore other .zip files globally
 *.zip
-!best_model.zip  # Ensure best_model.zip is not ignored if outside outputs/
+!best_model.zip  # Exempt if in root
 
+# Ignore logs and other files
 *.log
+*.npz
+*.tfevents
+.DS_Store
