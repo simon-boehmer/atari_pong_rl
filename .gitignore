@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+outputs/
+!.gitignore
+!outputs/best_models/
+!outputs/best_models/best_model.zip  # Explicitly include best_model.zip
+
+# Keep other .zip files ignored except best_model.zip
+*.zip
+!best_model.zip  # Ensure best_model.zip is not ignored if outside outputs/
+
+*.log

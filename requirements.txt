@@ -1,0 +1,7 @@
+gymnasium[atari]>=0.28.0
+ale-py
+autorom
+stable-baselines3[extra]>=2.0.0
+sb3-contrib
+numpy
+opencv-python
